@@ -1,0 +1,53 @@
+2026-11-15 19:59:57 [INFO] ui-test: 加载测试数据文件: F:\Project\PythonProject1\data\login_data.json
+2026-11-15 19:59:57 [INFO] ui-test: 启动 edge 浏览器
+2026-11-15 19:59:58 [INFO] ui-test: ========== 用例开始: test_login_success ==========
+2026-11-15 19:59:58 [INFO] ui-test: 打开登录页
+2026-11-15 19:59:58 [INFO] ui-test: 打开网页: https://www.saucedemo.com
+2026-11-15 20:00:04 [INFO] ui-test: 执行登录: username=standard_user
+2026-11-15 20:00:04 [INFO] ui-test: 输入文本 'standard_user' -> ('id', 'user-name')
+2026-11-15 20:00:04 [INFO] ui-test: 输入文本 'secret_sauce' -> ('id', 'password')
+2026-11-15 20:00:04 [INFO] ui-test: 点击元素: ('id', 'login-button')
+2026-11-15 20:00:07 [INFO] ui-test: 获取元素文本 'Products' <- ('class name', 'title')
+2026-11-15 20:00:07 [INFO] ui-test: ========== 用例开始: test_login_wrong_password ==========
+2026-11-15 20:00:07 [INFO] ui-test: 打开登录页
+2026-11-15 20:00:07 [INFO] ui-test: 打开网页: https://www.saucedemo.com
+2026-11-15 20:00:07 [INFO] ui-test: 执行登录: username=standard_user
+2026-11-15 20:00:07 [INFO] ui-test: 输入文本 'standard_user' -> ('id', 'user-name')
+2026-11-15 20:00:07 [INFO] ui-test: 输入文本 'wrong_password' -> ('id', 'password')
+2026-11-15 20:00:07 [INFO] ui-test: 点击元素: ('id', 'login-button')
+2026-11-15 20:00:08 [INFO] ui-test: 获取元素文本 'Epic sadface: Username and password do not match any user in this service' <- ('xpath', "//h3[@data-test='error']")
+2026-11-15 20:00:08 [INFO] ui-test: ========== 用例开始: test_login_empty_username ==========
+2026-11-15 20:00:08 [INFO] ui-test: 打开登录页
+2026-11-15 20:00:08 [INFO] ui-test: 打开网页: https://www.saucedemo.com
+2026-11-15 20:00:08 [INFO] ui-test: 执行登录: username=
+2026-11-15 20:00:08 [INFO] ui-test: 输入文本 '' -> ('id', 'user-name')
+2026-11-15 20:00:08 [INFO] ui-test: 输入文本 'secret_sauce' -> ('id', 'password')
+2026-11-15 20:00:08 [INFO] ui-test: 点击元素: ('id', 'login-button')
+2026-11-15 20:00:08 [INFO] ui-test: 获取元素文本 'Epic sadface: Username is required' <- ('xpath', "//h3[@data-test='error']")
+2026-11-15 20:00:08 [INFO] ui-test: ========== 用例开始: test_login_empty_password ==========
+2026-11-15 20:00:08 [INFO] ui-test: 打开登录页
+2026-11-15 20:00:08 [INFO] ui-test: 打开网页: https://www.saucedemo.com
+2026-11-15 20:00:08 [INFO] ui-test: 执行登录: username=standard_user
+2026-11-15 20:00:08 [INFO] ui-test: 输入文本 'standard_user' -> ('id', 'user-name')
+2026-11-15 20:00:08 [INFO] ui-test: 输入文本 '' -> ('id', 'password')
+2026-11-15 20:00:08 [INFO] ui-test: 点击元素: ('id', 'login-button')
+2026-11-15 20:00:08 [INFO] ui-test: 获取元素文本 'Epic sadface: Password is required' <- ('xpath', "//h3[@data-test='error']")
+2026-11-15 20:00:08 [INFO] ui-test: ========== 用例开始: test_login_locked_user ==========
+2026-11-15 20:00:08 [INFO] ui-test: 打开登录页
+2026-11-15 20:00:08 [INFO] ui-test: 打开网页: https://www.saucedemo.com
+2026-11-15 20:00:08 [INFO] ui-test: 执行登录: username=locked_out_user
+2026-11-15 20:00:08 [INFO] ui-test: 输入文本 'locked_out_user' -> ('id', 'user-name')
+2026-11-15 20:00:08 [INFO] ui-test: 输入文本 'secret_sauce' -> ('id', 'password')
+2026-11-15 20:00:08 [INFO] ui-test: 点击元素: ('id', 'login-button')
+2026-11-15 20:00:08 [INFO] ui-test: 获取元素文本 'Epic sadface: Sorry, this user has been locked out.' <- ('xpath', "//h3[@data-test='error']")
+2026-11-15 20:00:08 [INFO] ui-test: ========== 用例开始: test_add_to_cart_after_login ==========
+2026-11-15 20:00:08 [INFO] ui-test: 打开登录页
+2026-11-15 20:00:08 [INFO] ui-test: 打开网页: https://www.saucedemo.com
+2026-11-15 20:00:08 [INFO] ui-test: 执行登录: username=standard_user
+2026-11-15 20:00:08 [INFO] ui-test: 输入文本 'standard_user' -> ('id', 'user-name')
+2026-11-15 20:00:09 [INFO] ui-test: 输入文本 'secret_sauce' -> ('id', 'password')
+2026-11-15 20:00:09 [INFO] ui-test: 点击元素: ('id', 'login-button')
+2026-11-15 20:00:12 [INFO] ui-test: 获取到 6 个商品: ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)']
+2026-11-15 20:00:12 [INFO] ui-test: 把第一个商品加入购物车
+2026-11-15 20:00:12 [INFO] ui-test: 获取元素文本 '1' <- ('class name', 'shopping_cart_badge')
+2026-11-15 20:00:12 [INFO] ui-test: 关闭浏览器

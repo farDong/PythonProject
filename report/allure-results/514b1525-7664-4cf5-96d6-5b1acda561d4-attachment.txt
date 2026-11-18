@@ -1,0 +1,8 @@
+[32mINFO    [0m ui-test:conftest.py:42 ========== 用例开始: test_login_wrong_password ==========
+[32mINFO    [0m ui-test:login_page.py:24 打开登录页
+[32mINFO    [0m ui-test:base_page.py:82 打开网页: https://www.saucedemo.com
+[32mINFO    [0m ui-test:login_page.py:51 执行登录: username=standard_user
+[32mINFO    [0m ui-test:base_page.py:103 输入文本 'standard_user' -> ('id', 'user-name')
+[32mINFO    [0m ui-test:base_page.py:103 输入文本 'wrong_password' -> ('id', 'password')
+[32mINFO    [0m ui-test:base_page.py:89 点击元素: ('id', 'login-button')
+[32mINFO    [0m ui-test:base_page.py:111 获取元素文本 'Epic sadface: Username and password do not match any user in this service' <- ('xpath', "//h3[@data-test='error']")

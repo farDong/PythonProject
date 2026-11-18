@@ -1,0 +1,11 @@
+INFO     ui-test:conftest.py:42 ========== 用例开始: test_add_to_cart_after_login ==========
+INFO     ui-test:login_page.py:24 打开登录页
+INFO     ui-test:base_page.py:82 打开网页: https://www.saucedemo.com
+INFO     ui-test:login_page.py:51 执行登录: username=standard_user
+INFO     ui-test:base_page.py:103 输入文本 'standard_user' -> ('id', 'user-name')
+INFO     ui-test:base_page.py:103 输入文本 'secret_sauce' -> ('id', 'password')
+INFO     ui-test:base_page.py:89 点击元素: ('id', 'login-button')
+INFO     ui-test:products_page.py:37 获取到 6 个商品: ['Sauce Labs Backpack', 'Sauce Labs Bike Light', 'Sauce Labs Bolt T-Shirt', 'Sauce Labs Fleece Jacket', 'Sauce Labs Onesie', 'Test.allTheThings() T-Shirt (Red)']
+INFO     ui-test:products_page.py:43 把第一个商品加入购物车
+INFO     ui-test:base_page.py:111 获取元素文本 '1' <- ('class name', 'shopping_cart_badge')
+INFO     ui-test:conftest.py:30 关闭浏览器

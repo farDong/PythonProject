@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","366","被锁定用户登录失败，提示用户已锁定","script","2026-11-15","passed","2026-11-15","TestLogin","test_login","",""
+"","8880","标准用户登录成功，进入商品页","script","2026-11-15","passed","2026-11-15","TestLogin","test_login","",""
+"","246","错误密码登录失败，提示账号密码不匹配","script","2026-11-15","passed","2026-11-15","TestLogin","test_login","",""
+"","212","用户名为空登录失败，提示用户名必填","script","2026-11-15","passed","2026-11-15","TestLogin","test_login","",""
+"","3360","登录后商品页加载，加入购物车角标数量为 1","script","2026-11-15","passed","2026-11-15","TestLogin","test_login","",""
+"","246","密码为空登录失败，提示密码必填","script","2026-11-15","passed","2026-11-15","TestLogin","test_login","",""

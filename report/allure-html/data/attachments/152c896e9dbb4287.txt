@@ -1,0 +1,8 @@
+INFO     ui-test:conftest.py:42 ========== 用例开始: test_login_locked_user ==========
+INFO     ui-test:login_page.py:24 打开登录页
+INFO     ui-test:base_page.py:82 打开网页: https://www.saucedemo.com
+INFO     ui-test:login_page.py:51 执行登录: username=locked_out_user
+INFO     ui-test:base_page.py:103 输入文本 'locked_out_user' -> ('id', 'user-name')
+INFO     ui-test:base_page.py:103 输入文本 'secret_sauce' -> ('id', 'password')
+INFO     ui-test:base_page.py:89 点击元素: ('id', 'login-button')
+INFO     ui-test:base_page.py:111 获取元素文本 'Epic sadface: Sorry, this user has been locked out.' <- ('xpath', "//h3[@data-test='error']")
